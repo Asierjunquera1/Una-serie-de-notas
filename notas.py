@@ -24,8 +24,12 @@ def desviacion_tipica():
     desviacion_tipica = df["Notas"].std()
     print("La desviación típica es:", desviacion_tipica)
 
+def varianza():
+    varianza = df["Notas"].var()
+    print("La varianza es:", varianza)
 
 media()
 mediana()
 moda()
 desviacion_tipica()
+varianza()
