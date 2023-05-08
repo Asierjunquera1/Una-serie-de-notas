@@ -1,7 +1,7 @@
 import pandas as pd
 
 df=pd.DataFrame({"Notas": [3,19,10,15,14,12,9,8,11,12,11,12,13,11,14,16] })
-print(df)
+
 
 def media():
     media=df["Notas"].mean()
