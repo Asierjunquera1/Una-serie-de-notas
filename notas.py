@@ -20,6 +20,12 @@ def moda():
         for i in range(1, len(moda)):
             print("y", moda.iloc[i])
 
+def desviacion_tipica():
+    desviacion_tipica = df["Notas"].std()
+    print("La desviación típica es:", desviacion_tipica)
+
+
 media()
 mediana()
 moda()
+desviacion_tipica()
