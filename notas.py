@@ -42,3 +42,10 @@ def cuartil3():
     print("El valor del tercer cuartil (75%) es: ", cuartil3)
 
 
+def valor_max():
+    valor_max = df["Notas"].max()
+    print("El valor máximo es: ", valor_max)
+
+def valor_min():
+    valor_min = df["Notas"].min()
+    print("El valor mínimo es:", valor_min)
