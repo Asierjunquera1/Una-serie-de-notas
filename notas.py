@@ -6,6 +6,7 @@ print(df)
 def media():
     media=df["Notas"].mean()
     print("la media es:", media)
+    return media
 
 def mediana():
     mediana=df["Notas"].median()
@@ -28,8 +29,16 @@ def varianza():
     varianza = df["Notas"].var()
     print("La varianza es:", varianza)
 
-media()
-mediana()
-moda()
-desviacion_tipica()
-varianza()
+def cuartil1():
+    cuartil1 = df["Notas"].quantile(0.25)
+    print("El valor del primer cuartil (25%) es: ", cuartil1)
+
+def cuartil2():
+    cuartil2 = df["Notas"].quantile(0.5)
+    print("El valor del segundo cuartil (50%) es: ", cuartil2)
+
+def cuartil3():
+    cuartil3 = df["Notas"].quantile(0.75)
+    print("El valor del tercer cuartil (75%) es: ", cuartil3)
+
+
